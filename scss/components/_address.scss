@@ -1,0 +1,54 @@
+
+.contact a {
+    font-weight: 500;
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact a:hover svg,
+.contact a:focus svg {
+        fill: var(--blue);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.contact {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.address a {
+    font-weight: 500;
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.address__city {
+    padding-top: 20px;
+}
+
+.address__mail {
+    padding-top: 9px;
+}
+
+.address__telephone {
+    padding-top: 9px;
+}

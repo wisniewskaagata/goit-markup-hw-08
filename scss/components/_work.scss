@@ -1,0 +1,36 @@
+.work {
+    font-size: 36px;
+    line-height: 1.17;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.work__photos {
+        position: relative;
+        overflow: hidden;
+    &--list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        height: 294px;
+    }
+}
+
+.work__photos > .work__tittle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    width: 370px;
+    background-color: var(--label);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 27px;
+}

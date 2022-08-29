@@ -1,0 +1,15 @@
+.company {
+    font-size: 36px;
+    line-height: 1.17px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 50px;
+    &__list {
+        list-style: none;
+        display: flex;
+        fill: var(--social);
+        gap: 30px;
+        justify-content: space-between;
+    }
+}
+

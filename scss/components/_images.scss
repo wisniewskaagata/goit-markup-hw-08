@@ -1,0 +1,27 @@
+.icon {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    &__gallery {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    &__tittle {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--dark);
+    }
+    &__description {
+        color: var(--grey);
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        line-height: 1.71;
+        text-transform: none;
+        padding-top: 10px;
+    }
+}
+

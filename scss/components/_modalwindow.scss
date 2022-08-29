@@ -1,0 +1,220 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    &-button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background-color: var(--white);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.modal-button:hover {
+    border: 1px solid var(--blue);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    & svg {
+    fill: var(--blue)
+    }
+}
+
+input:focus+.icon-people,
+input:focus+.icon-telephone,
+input:focus+.icon-envelope,
+textarea,
+input {
+    fill: var(--blue);
+    outline-color: var(--blue);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    right: 8px;
+    top: 8px;
+}
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    transition: opacity 250ms linear, visibility 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.0);
+    height: 100%;
+    &__hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.first-modal-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark);
+    padding-bottom: 12px;
+    padding-top: 40px;
+}
+
+.name-input {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--grey);
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.place-input {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.comment-input {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 16px 12px;
+}
+
+.text-area {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--modal);
+}
+
+.rules-policy {
+    color: var(--blue);
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.71;
+}
+
+.checkbox-window {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    & input {
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+}
+
+.checkmark {
+    top: 4px;
+    left: 14px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: var(--white);
+    border: 2px solid black;
+    position: absolute;
+    width: 15px;
+    height: 16px;
+}
+
+.checkbox-icon {
+    height: 16px;
+    width: 15px;
+    visibility: hidden;
+    fill: var(--white);
+}
+
+.checkbox-window input:checked~.checkmark .checkbox-icon {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 2px;
+    visibility: visible;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.checkbox-text {
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+    margin-left: 38px;
+    cursor: default;
+}
+
+.modal-checkbox-link {
+    color: var(--blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icon-people {
+    color: var(--black);
+    position: absolute;
+    left: 15px;
+    top: 28px;
+}
+
+.icon-telephone {
+    color: var(--black);
+    position: absolute;
+    left: 14.27px;
+    top: 30.23px;
+}
+
+.icon-envelope {
+    color: var(--black);
+    position: absolute;
+    left: 13.5px;
+    top: 29px;
+}
+
+.button-form {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.85;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin: 30px 124px 40px;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
